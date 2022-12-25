@@ -1,0 +1,871 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+
+ *{
+    margin: 0;
+    padding: 0;
+
+
+ }
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
+
+#contenedor {
+    background: linear-gradient(to right, #B21368 0%, #F2C5E0 80%, #B21368 100%);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "cabecera"
+        "tinicio"
+        "heroinicio"
+        "video"
+        "carroinicio"
+        "forminicio"
+        "pie"
+
+
+    ;
+
+}
+
+#cabecera {
+    grid-area: cabecera;
+ 
+}
+
+
+.imglogo {
+
+    width: 3cm;
+
+}
+
+.Quiensoy {
+    color: white;
+    font-size: large;
+    padding-top: 50px;
+}
+
+
+
+
+#titulo__inicio {
+    grid-area: tinicio;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#hero__inicio {
+    grid-area: heroinicio;
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+
+
+}
+
+.pheroinicio {
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+.fotoinicio {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+#video {
+    grid-area: video;
+    text-align: center;
+    padding-top: 30px;
+
+
+}
+
+#form__inicio {
+    grid-area: forminicio;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.Enviarboton {
+    background: linear-gradient(to right, #B21368, #F2C5E0);
+    width: 80px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    animation: saltarin 2s infinite;
+    margin: 0px auto;
+
+
+}
+
+@keyframes saltarin {
+
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 0px;
+    }
+
+
+}
+
+#carrousel__inicio{
+    grid-area: carroinicio;
+}
+
+#pie {
+
+    grid-area: pie;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+
+}
+
+#pie p {
+    color: #a91b60;
+
+}
+
+.icon-facebook2 {
+    text-decoration: none;
+}
+
+.icon-instagram {
+    text-decoration: none;
+}
+
+.icon-facebook2:before {
+    content: "\ea91";
+    color: grey;
+
+
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+    color: grey;
+
+}
+
+
+
+.contenido {
+    color: white;
+    font-weight: 500;
+}
+
+@media only screen and (min-width:1280px){
+   
+
+    #hero__inicio{
+  
+     display: flex;
+     flex-direction: row;
+     padding-top: 40px;
+     gap: 10px;  
+    
+     }
+
+
+   .pheroinicio{
+     background-color: #EC9EC0;
+     border-radius: 20px;
+     height: 300px;
+     width: 45%;
+     margin-left: 60px;
+   
+    }
+
+   .fotoinicio{
+     width: 45%;
+     height: 300px;
+   
+     order: 2;
+    }
+
+
+
+  
+     
+
+}
+
+
+
+
+/* PAGINA DE VISION*/
+
+body{
+    background: linear-gradient(to right,#B21368 0%, #F2C5E0 80%, #B21368 100%);
+}
+
+
+#contenedor__vision{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+    
+    "cabevision"
+    "tvision"
+    "herovision" 
+    "pievision"
+ 
+    
+    ;
+ 
+ }
+ 
+ #cabecera__vision{
+   grid-area: cabevision;
+   
+ }
+
+
+  .imglogo{
+
+    width: 3cm;
+   
+   }
+
+
+ #titulo__vision{
+    grid-area: tvision;
+    text-align: center;
+    padding-top: 50px;
+   
+
+ }
+
+ .vision{
+    color: white;
+    font-size: large;
+ }
+
+ #hero__vision{
+    grid-area: herovision;
+    text-align: center;
+ }
+
+ .pherovision{
+    color:white
+ }
+
+ .imgvision{
+
+        width: 100%;
+        height: 300px;
+ 
+ }
+
+
+
+ #pie__vision{
+    grid-area: pievision;
+    text-align: center;
+    padding-top: 220px;
+    font-weight: 600;
+
+ }
+ #pie__vision p{
+    color:#a91b60
+ 
+ }
+
+ 
+
+.texto-fuccia{
+ 
+   color: #a91b60;;
+   
+
+}
+
+
+/* VISION DESKTOP*/
+
+@media only screen and (min-width:1280px){
+
+
+    
+    #hero__vision{
+  
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        gap: 130px;
+        margin-left: 50px;
+        margin-right: 50px;
+       
+    }
+ 
+
+}
+
+
+
+/* PAGINA DE MISION*/
+
+
+
+
+body{
+    background: linear-gradient(to right,#B21368 0%, #F2C5E0 80%, #B21368 100%);
+}
+
+
+#contenedor__mision{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+    
+    
+    "cabemision"
+    "tmision"
+    "heromision" 
+    "piemision"
+ 
+    
+    ;
+ 
+ }
+ 
+ #cabecera__mision{
+   grid-area: cabemision;
+   
+ }
+
+
+  .imglogo{
+
+    width: 3cm;
+   
+   }
+
+  
+
+ #titulo__mision{
+    grid-area: tmision;
+    text-align: center;
+
+ }
+
+
+ .mision{
+    color: white;
+    font-size: large;
+ }
+
+ #hero__mision{
+    grid-area: heromision;
+    text-align: center;
+ }
+
+ .pheromision{
+    color:white
+ }
+
+ .imgmision{
+
+        width: 100%;
+        height: 300px;
+ 
+ }
+
+
+
+ #pie__mision{
+    grid-area: piemision;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    padding-top: 220px;
+
+ }
+ #pie__mision p{
+    color:#a91b60
+ 
+ }
+
+
+
+
+
+
+
+/* MISION DESKTOP*/
+
+
+@media only screen and (min-width:1280px){
+
+
+    #hero__mision{
+  
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        gap: 110px;
+        margin-left: 50px;
+        margin-right: 50px;
+           
+       
+    }
+ 
+
+}
+
+/* PAGINA DE TE AYUDO*/
+
+
+
+#contenedor__teayudo{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+    
+    
+    "cabeteayudo"
+    "tteayudo"
+    "contenservicios" 
+    "formteayudo"
+    "carroteayudo"
+    "pieteayudo"
+ 
+    
+    ;
+ 
+ }
+
+#cabecera__teayudo{
+
+    grid-area: cabeteayudo;
+
+}
+
+#titulo__teayudo{
+    grid-area: tteayudo ;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.teayudo{
+    color: white;
+    font-size: large;
+}
+
+#contenedor__servicios{
+    grid-area:contenservicios ;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+   
+	
+}
+
+.servicio{
+
+
+    background-color: #B21368;
+     border-radius: 10px;
+     text-align: center;
+     width: 200px;
+     margin-top: 50px;
+     color: white;
+   
+   
+}
+
+#carrousel__teayudo{
+    grid-area: carroteayudo;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#form__teayudo{
+
+    grid-area: formteayudo;
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 30px ;
+
+}
+
+label {
+    
+    color: white;
+    font-weight: bold;}
+
+#pie__teayudo{
+    grid-area: pieteayudo;
+    text-align: center;
+    padding-top: 220px;
+    
+    
+
+}
+
+
+
+/* TE AYUDO DESKTOP*/
+
+
+@media only screen and (min-width:1280px){
+
+
+    #contenedor__servicios{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: stretch;
+        padding-top: 20px;
+        
+    }
+
+
+    .servicio{
+    
+        background-color:#B21368;
+        border-radius: 20px;
+        text-align: center;
+        width: 200px;
+        height: 250px;
+        padding-top: 20px;
+       
+       
+    }
+}
+
+
+/* PAGINA DE CONTACTO*/
+
+
+  
+
+
+#contenedor__contacto {
+    
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+
+        "cabecontacto"
+        "tcontacto"
+        "formcontacto"
+        "infointeres"
+        "piecontacto"
+    ;
+
+
+
+}
+
+#Cabecera__contacto {
+    grid-area: cabecontacto;
+
+}
+
+#titulo__contacto {
+    grid-column: tcontacto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.contacto{
+    color: white;
+    font-size: large;
+}
+
+#form__contacto {
+    grid-area: formcontacto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+
+
+}
+
+#Informacion__de__interes{
+grid-area: infointeres;
+text-align: center;
+padding-top: 180px;
+
+
+}
+
+.enviarcontacto{
+    background: linear-gradient(to right, #B21368, #F2C5E0);
+    width: 100px;
+}
+
+textarea{
+    text-align: center;
+    border-radius: 8px;
+    color:lightgray
+    
+    
+}
+
+
+
+#pie__contacto{
+    grid-area: piecontacto;
+    text-align: center;
+    padding-top: 220px;
+}
+
+
+
+
+/* PARA DESPUES 
+header h1 a{
+    color:  #A91B60;   
+}
+
+
+.logo{
+    width: 10%;
+}
+
+
+nav {
+
+}
+
+
+nav ul {
+    font-size: 30px;
+    list-style: none;   
+}
+
+
+
+nav ul li{
+    color:#d9376e;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li:hover ul{
+    display: block;
+    background-color:#EBE0D0;;
+}
+
+
+
+nav ul li:hover ul li a{
+    display: block;
+    background-color: #EBE0D0;;
+}
+
+nav ul li a{
+    color: #A91B60
+ 
+}
+
+
+nav ul li a:hover{
+    color: #EC9EC0
+
+}
+
+
+nav ul ul{
+
+  position: absolute;
+  display: none;
+
+}
+
+
+nav ul ul li{
+
+   display: block;
+}
+
+
+
+section h1{
+    background-color:#F2C5E0;
+    text-align: center;
+    font-size: x-large;
+
+   
+  
+}
+
+
+
+.foto{
+    width: 50%; 
+    height: 170mm;
+}
+
+
+
+.plenitud{
+
+    width: 60%; 
+    height: 120mm; 
+ 
+}
+
+
+.equipo{
+
+    width: 60%; 
+    height: 120mm;
+
+}
+
+
+
+.texto-negro{
+    color: black
+
+}
+
+
+
+.texto-fuccia{
+ 
+   color: #a91b60;;
+   
+
+}
+
+
+p{
+    color:black;
+}
+
+
+section h2{
+    color: #EBE0D0
+
+}
+
+
+
+section{
+    background-color: #A91B60;
+
+
+}
+
+#video{
+
+    text-align: center;
+}
+
+section table tr th{
+
+   color: #EBE0D0;
+
+}
+
+section table tr td{
+
+    color:black;
+    text-align: center;
+}
+
+
+
+
+#video{
+     background-color: #EBE0D0;
+}
+
+
+form label{
+
+    color:#EBE0D0 ;
+ 
+}
+
+form{
+
+  text-align: center;
+  background-color:#a91b60;
+}
+
+main{
+    text-align: center;
+ 
+}
+
+
+
+
+footer{
+    background-color: #EC9EC0;
+    text-align: center;
+}
+
+
+
+
+footer p{
+   color:#a91b60
+
+}
+
+
+*/
+
+
+
+
+
+
+/*
+.imglogo{
+
+    width: 3cm;
+
+}
+
+
+
+
+.ulmenu{
+display: flex;
+flex-direction: column;
+
+
+
+
+}
+
+
+*/
