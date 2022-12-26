@@ -636,7 +636,7 @@ label {
 /* TE AYUDO DESKTOP*/
 
 
-@media only screen and (min-width:1280px){
+@media only screen and (min-width:1280px) {
 
 
     #contenedor__servicios{
@@ -673,16 +673,14 @@ label {
        padding-top: 70px;
        padding-bottom: 90px ;
     
+    }
 }
-
 
 /* PAGINA DE CONTACTO*/
 
 
   
-
-
-#contenedor__contacto {
+#contenedor__contacto{
     
 
     display: grid;
