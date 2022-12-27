@@ -1,20 +1,19 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
 
-
- *{
+* {
     margin: 0;
     padding: 0;
 
-
- }
+}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(to right, #B21368 0%, #F2C5E0 80%, #B21368 100%);
 
 }
 
-
+/* PAGINA DE INDEX*/
 
 #contenedor {
     background: linear-gradient(to right, #B21368 0%, #F2C5E0 80%, #B21368 100%);
@@ -30,14 +29,13 @@ body {
         "forminicio"
         "pie"
 
-
     ;
 
 }
 
 #cabecera {
     grid-area: cabecera;
- 
+
 }
 
 
@@ -52,10 +50,8 @@ body {
     font-size: large;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+
 }
-
-
 
 
 #titulo__inicio {
@@ -75,7 +71,7 @@ body {
 }
 
 .pheroinicio {
-    background: linear-gradient( #F2C5E0 0%,#B21368 90%);
+    background: linear-gradient(#F2C5E0 0%, #B21368 90%);
     border-radius: 20px;
     padding-top: 40px;
     text-align: center;
@@ -99,7 +95,7 @@ body {
 
 }
 
-.video__texto{
+.video__texto {
     color: white;
     font-weight: 500;
     background-color: #a91b60;
@@ -144,7 +140,7 @@ body {
 
 }
 
-#carrousel__inicio{
+#carrousel__inicio {
     grid-area: carroinicio;
     margin-left: 30px;
     margin-right: 30px;
@@ -159,10 +155,6 @@ body {
 
 }
 
-#pie p {
-    color: #a91b60;
-
-}
 
 .icon-facebook2 {
     text-decoration: none;
@@ -186,55 +178,55 @@ body {
 }
 
 
+/* INDEX DESKTOP*/
 
 
-
-@media only screen and (min-width:1280px){
-   
-
-    #hero__inicio{
-  
-     display: flex;
-     flex-direction: row;
-     padding-top: 40px;
-     gap: 80px;  
-     text-align: center;
-    
-     }
+@media only screen and (min-width:1280px) {
 
 
-   .pheroinicio{
-     background: linear-gradient(#B21368 0%, #F2C5E0 170%);
-     border-radius: 20px;
-     width: 450px;
-     height: 450px;
-     padding-top: 30px;
-     padding-left: 40px;
-     padding-right: 40px;
-     margin-left: 150px;
-     font-size: medium;
-     font-weight: 310;
-   
-    }
+    #hero__inicio {
 
-   .fotoinicio{
-     width: 450px;
-     height: 450px;
-     order: 2;
-     border-radius: 20px;
-     margin-top: 10px;
-    
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        gap: 80px;
+        text-align: center;
+
     }
 
 
-  #carrousel__inicio{
+    .pheroinicio {
+        background: linear-gradient(#B21368 0%, #F2C5E0 170%);
+        border-radius: 20px;
+        width: 450px;
+        height: 450px;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 150px;
+        font-size: medium;
+        font-weight: 310;
+
+    }
+
+    .fotoinicio {
+        width: 450px;
+        height: 450px;
+        order: 2;
+        border-radius: 20px;
+        margin-top: 10px;
+
+    }
+
+
+    #carrousel__inicio {
         margin-left: 100px;
         margin-right: 100px;
         padding-top: 20px;
     }
 
-    
- 
+
+
 
 }
 
@@ -243,62 +235,58 @@ body {
 
 /* PAGINA DE VISION*/
 
-body{
-    background: linear-gradient(to right,#B21368 0%, #F2C5E0 80%, #B21368 100%);
+
+
+
+#contenedor__vision {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+
+        "cabevision"
+        "tvision"
+        "herovision"
+        "pievision"
+
+    ;
+
+}
+
+#cabecera__vision {
+    grid-area: cabevision;
+
 }
 
 
-#contenedor__vision{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6,auto);
-    grid-template-areas: 
-    
-    "cabevision"
-    "tvision"
-    "herovision" 
-    "pievision"
- 
-    
-    ;
- 
- }
- 
- #cabecera__vision{
-   grid-area: cabevision;
-   
- }
-
-
-  .imglogo{
+.imglogo {
 
     width: 3cm;
-   
-   }
+
+}
 
 
- #titulo__vision{
+#titulo__vision {
     grid-area: tvision;
     text-align: center;
     padding-top: 50px;
-   
 
- }
+}
 
- .vision{
+.vision {
     color: white;
     font-size: large;
     padding-bottom: 20px;
- }
+}
 
- #hero__vision{
+#hero__vision {
     grid-area: herovision;
     margin-left: 30px;
     margin-right: 30px;
 
- }
+}
 
-  .pherovision{
+.pherovision {
     background: linear-gradient(#B21368, #F2C5E0);
     color: white;
     margin-top: 0px;
@@ -309,54 +297,51 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 40px;
-    height: 200px ;
+    height: 200px;
 
+}
 
-
-   }
- 
-   .imgvision{
+.imgvision {
 
     width: 100%;
     height: 300px;
     border-radius: 40px;
+}
 
 
-   }
-
-
- #pie__vision{
+#pie__vision {
     grid-area: pievision;
     text-align: center;
     padding-top: 220px;
     font-weight: 600;
 
- }
- #pie__vision p{
-    color:#a91b60
- 
 }
 
- 
+#pie__vision p {
+    color: #a91b60
+}
 
-.texto-fuccia{
- 
-   color: #a91b60;;
-   
+
+
+.texto-fuccia {
+
+    color: #a91b60;
+    ;
+
 
 }
 
 
 /* VISION DESKTOP*/
 
-@media only screen and (min-width:1280px){
+@media only screen and (min-width:1280px) {
 
-    .vision{
+    .vision {
         padding-top: 30px;
-     }
+    }
 
-    
-    #hero__vision{
+
+    #hero__vision {
         display: flex;
         flex-direction: row;
         padding-top: 20px;
@@ -364,21 +349,21 @@ body{
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 70px;
-       
+
     }
 
-    .pherovision{
-    background-color: #EC9EC0;
-    border-radius: 40px;
-    height: 300px;
-    width: 45%;
-    color:white;
-    text-align: center;
+    .pherovision {
+        background-color: #EC9EC0;
+        border-radius: 40px;
+        height: 300px;
+        width: 45%;
+        color: white;
+        text-align: center;
     }
-   
-  
-   
-   
+
+
+
+
 
 }
 
@@ -387,67 +372,60 @@ body{
 /* PAGINA DE MISION*/
 
 
+#contenedor__mision {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
 
 
-body{
-    background: linear-gradient(to right,#B21368 0%, #F2C5E0 80%, #B21368 100%);
+        "cabemision"
+        "tmision"
+        "heromision"
+        "piemision"
+
+
+    ;
+
+}
+
+#cabecera__mision {
+    grid-area: cabemision;
+
 }
 
 
-#contenedor__mision{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6,auto);
-    grid-template-areas: 
-    
-    
-    "cabemision"
-    "tmision"
-    "heromision" 
-    "piemision"
- 
-    
-    ;
- 
- }
- 
- #cabecera__mision{
-   grid-area: cabemision;
-   
- }
-
-
-  .imglogo{
+.imglogo {
 
     width: 3cm;
-   
-   }
 
-  
+}
 
- #titulo__mision{
+
+
+#titulo__mision {
     grid-area: tmision;
     text-align: center;
     padding-top: 50px;
 
- }
+}
 
 
- .mision{
+.mision {
     color: white;
     font-size: large;
     padding-bottom: 20px;
 
- }
+}
 
- #hero__mision{
+#hero__mision {
     grid-area: heromision;
     margin-left: 30px;
     margin-right: 30px;
 
- }
+}
 
-  .pheromision{
+.pheromision {
     background: linear-gradient(#B21368, #F2C5E0);
     color: white;
     margin-top: 0px;
@@ -458,54 +436,43 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 40px;
-    height: 200px ;
+    height: 200px;
 
 
+}
 
-   }
- 
-   .imgmision{
+.imgmision {
 
     width: 100%;
     height: 300px;
     border-radius: 40px;
 
 
-   }
+}
 
 
 
-
- #pie__mision{
+#pie__mision {
     grid-area: piemision;
     text-align: center;
     padding-top: 20px;
     font-weight: 600;
     padding-top: 220px;
 
- }
- #pie__mision p{
-    color:#a91b60
- 
- }
-
-
-
-
-
+}
 
 
 /* MISION DESKTOP*/
 
 
-@media only screen and (min-width:1280px){
+@media only screen and (min-width:1280px) {
 
-    .mision{
+    .mision {
         padding-top: 80px;
-     }
+    }
 
-    
-    #hero__mision{
+
+    #hero__mision {
         display: flex;
         flex-direction: row;
         padding-top: 20px;
@@ -513,121 +480,117 @@ body{
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 70px;
-       
+
     }
 
-    .pheromision{
-    background-color: #EC9EC0;
-    border-radius: 40px;
-    height: 300px;
-    width: 60%;
-    color:white;
-    text-align: center;
-    padding-top: 50px;
+    .pheromision {
+        background-color: #EC9EC0;
+        border-radius: 40px;
+        height: 300px;
+        width: 60%;
+        color: white;
+        text-align: center;
+        padding-top: 50px;
     }
-   
-  
-   
-  
- 
+
 
 }
 
 /* PAGINA DE TE AYUDO*/
 
 
-
-#contenedor__teayudo{
+#contenedor__teayudo {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(6,auto);
-    grid-template-areas: 
-    
-    
-    "cabeteayudo"
-    "tteayudo"
-    "contenservicios" 
-    "formteayudo"
-    "carroteayudo"
-    "pieteayudo"
- 
-    
-    ;
- 
- }
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
 
-#cabecera__teayudo{
+
+        "cabeteayudo"
+        "tteayudo"
+        "contenservicios"
+        "formteayudo"
+        "carroteayudo"
+        "pieteayudo"
+
+
+    ;
+
+}
+
+#cabecera__teayudo {
 
     grid-area: cabeteayudo;
 
 }
 
-#titulo__teayudo{
-    grid-area: tteayudo ;
+#titulo__teayudo {
+    grid-area: tteayudo;
     text-align: center;
     padding-top: 50px;
 }
 
-.teayudo{
+.teayudo {
     color: white;
     font-size: large;
 }
 
-#contenedor__servicios{
-    grid-area:contenservicios ;
+#contenedor__servicios {
+    grid-area: contenservicios;
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch;
-    
-   
-	
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+
+
 }
 
-.servicio{
+.servicio {
 
 
     background: linear-gradient(#B21368 0%, #F2C5E0 100%);
-     border-radius: 10px;
-     text-align: center;
-     width: 300px;
-     margin-top: 50px;
-     color: white;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-top: 20px;
-   
-   
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin-top: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+
 }
 
-#carrousel__teayudo{
+#carrousel__teayudo {
     grid-area: carroteayudo;
     margin-left: 30px;
     margin-right: 30px;
 }
 
-#form__teayudo{
+#form__teayudo {
 
     grid-area: formteayudo;
-   text-align: center;
-   padding-top: 60px;
-   padding-bottom: 90px ;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 90px;
 
 }
 
 label {
-    
-    color: white;
-    font-weight: bold;}
 
-#pie__teayudo{
+    color: white;
+    font-weight: bold;
+}
+
+#pie__teayudo {
     grid-area: pieteayudo;
     text-align: center;
     padding-top: 180px;
-    
-    
+
+
 
 }
 
@@ -639,49 +602,48 @@ label {
 @media only screen and (min-width:1280px) {
 
 
-    #contenedor__servicios{
+    #contenedor__servicios {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
         align-content: stretch;
         padding-top: 20px;
-        
+
     }
 
 
-    .servicio{
+    .servicio {
         border-radius: 20px;
         text-align: center;
         width: 400px;
         height: 250px;
         padding-top: 30px;
-       
-       
+
+
     }
 
-    #carrousel__teayudo{
-   
+    #carrousel__teayudo {
+
         margin-left: 100px;
         margin-right: 100px;
     }
 
-    #form__teayudo{
+    #form__teayudo {
 
         grid-area: formteayudo;
-       text-align: center;
-       padding-top: 70px;
-       padding-bottom: 90px ;
-    
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 90px;
+
     }
 }
 
 /* PAGINA DE CONTACTO*/
 
 
-  
-#contenedor__contacto{
-    
+#contenedor__contacto {
+
 
     display: grid;
     grid-template-columns: 100%;
@@ -694,7 +656,6 @@ label {
         "infointeres"
         "piecontacto"
     ;
-
 
 
 }
@@ -710,7 +671,7 @@ label {
     padding-top: 30px;
 }
 
-.contacto{
+.contacto {
     color: white;
     font-size: large;
 }
@@ -724,49 +685,45 @@ label {
 
 }
 
-#Informacion__de__interes{
-grid-area: infointeres;
-text-align: center;
-padding-top: 180px;
+#Informacion__de__interes {
+    grid-area: infointeres;
+    text-align: center;
+    padding-top: 180px;
 
 
 }
 
-.enviarcontacto{
+.enviarcontacto {
     background: linear-gradient(to right, #B21368, #F2C5E0);
     width: 100px;
 }
 
-textarea{
+textarea {
     text-align: center;
     border-radius: 8px;
-    color:lightgray
-    
-    
+    color: lightgray
 }
 
 
 
-#pie__contacto{
+#pie__contacto {
     grid-area: piecontacto;
     text-align: center;
     padding-top: 220px;
 }
 
- /* CONTACTO DESKTOP*/
 
-@media only screen and (min-width:1280px){
+/* CONTACTO DESKTOP*/
+
+@media only screen and (min-width:1280px) {
 
     #form__contacto {
         margin-left: auto;
         margin-right: auto;
         padding-top: 70px;
-    
-    
+
+
     }
 
 
 }
-
-
-
