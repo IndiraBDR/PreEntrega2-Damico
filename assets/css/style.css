@@ -717,8 +717,8 @@ label {
 
 #form__contacto {
     grid-area: formcontacto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25px;
+    margin-right: 25px;
     padding-top: 70px;
 
 
@@ -751,6 +751,21 @@ textarea{
     grid-area: piecontacto;
     text-align: center;
     padding-top: 220px;
+}
+
+ /* CONTACTO DESKTOP*/
+
+@media only screen and (min-width:1280px){
+
+    #form__contacto {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 70px;
+    
+    
+    }
+
+
 }
 
 
