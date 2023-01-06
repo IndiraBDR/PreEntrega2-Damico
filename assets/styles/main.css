@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: linear-gradient(to right, #B21368 0%, #F2C5E0 80%, #B21368 100%);
+}
+
+/* PAGINA DE INDEX*/
+#contenedor {
+  background: linear-gradient(to right, #B21368 0%, #F2C5E0 80%, #B21368 100%);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "cabecera" "tinicio" "heroinicio" "carroinicio" "video" "forminicio" "pie";
+}
+
+#cabecera {
+  grid-area: cabecera;
+}
+
+#titulo__inicio {
+  grid-area: tinicio;
+  text-align: center;
+}
+#titulo__inicio h1 {
+  color: white;
+  font-size: large;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#hero__inicio {
+  grid-area: heroinicio;
+  text-align: center;
+  font-weight: 500;
+  font-size: medium;
+}
+#hero__inicio img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+#hero__inicio p {
+  background: linear-gradient(#B21368 0%, #F2C5E0 120%);
+  border-radius: 20px;
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+  font-weight: 310;
+  margin-top: 10px;
+}
+
+#video {
+  grid-area: video;
+  text-align: center;
+  padding-top: 30px;
+}
+#video p {
+  color: white;
+  font-weight: 500;
+  background-color: #a91b60;
+}
+
+#form__inicio {
+  grid-area: forminicio;
+  text-align: center;
+  padding-top: 20px;
+}
+#form__inicio input {
+  background: linear-gradient(to right, #B21368, #F2C5E0);
+  width: 80px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  -webkit-animation: saltarin 2s infinite;
+          animation: saltarin 2s infinite;
+  margin: 0px auto;
+}
+@-webkit-keyframes saltarin {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes saltarin {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+#form__inicio textarea {
+  text-align: center;
+  border-radius: 8px;
+  color: lightgray;
+}
+#form__inicio .tex-form-inicio {
+  color: white;
+  font-weight: bold;
+}
+
+#carrousel__inicio {
+  grid-area: carroinicio;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#pie {
+  grid-area: pie;
+  text-align: center;
+  padding-top: 150px;
+  font-weight: 600;
+}
+#pie .icon-facebook2 {
+  text-decoration: none;
+}
+#pie .icon-facebook2:before {
+  content: "\ea91";
+  color: grey;
+}
+#pie .icon-instagram {
+  text-decoration: none;
+}
+#pie .icon-instagram::before {
+  content: "\ea92";
+  color: grey;
+}
+
+/* INDEX DESKTOP*/
+@media only screen and (min-width: 1280px) {
+  #hero__inicio {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    gap: 80px;
+    text-align: center;
+  }
+  #hero__inicio img {
+    width: 450px;
+    height: 450px;
+    order: 2;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  #hero__inicio p {
+    background: linear-gradient(#B21368 0%, #F2C5E0 120%);
+    border-radius: 20px;
+    width: 450px;
+    height: 450px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 150px;
+    font-size: medium;
+    font-weight: 310;
+  }
+  #carrousel__inicio {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+}
+/* PAGINA DE VISION*/
+#contenedor__vision {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "cabevision" "tvision" "herovision" "pie";
+}
+
+#cabecera__vision {
+  grid-area: cabevision;
+}
+
+#titulo__vision {
+  grid-area: tvision;
+  text-align: center;
+}
+#titulo__vision h1 {
+  color: white;
+  font-size: large;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#hero__vision {
+  grid-area: herovision;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#hero__vision img {
+  width: 100%;
+  height: 300px;
+  border-radius: 40px;
+}
+#hero__vision p {
+  background: linear-gradient(#B21368 0%, #F2C5E0 120%);
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 40px;
+  height: 200px;
+}
+
+/* VISION DESKTOP*/
+@media only screen and (min-width: 1280px) {
+  #hero__vision {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 70px;
+  }
+  #hero__vision p {
+    border-radius: 40px;
+    height: 300px;
+    width: 45%;
+    color: white;
+    text-align: center;
+  }
+}
+/* PAGINA DE MISION*/
+#contenedor__mision {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "cabemision" "tmision" "heromision" "pie";
+}
+
+#cabecera__mision {
+  grid-area: cabemision;
+}
+
+#titulo__mision {
+  grid-area: tmision;
+  text-align: center;
+}
+#titulo__mision h1 {
+  color: white;
+  font-size: large;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#hero__mision {
+  grid-area: heromision;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#hero__mision img {
+  width: 100%;
+  height: 300px;
+  border-radius: 40px;
+}
+#hero__mision p {
+  background: linear-gradient(#B21368 0%, #F2C5E0 120%);
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 40px;
+  height: 200px;
+}
+
+/* MISION DESKTOP*/
+@media only screen and (min-width: 1280px) {
+  #hero__mision {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 70px;
+  }
+  #hero__mision p {
+    border-radius: 40px;
+    height: 300px;
+    width: 60%;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+/* PAGINA DE TE AYUDO*/
+#contenedor__teayudo {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "cabeteayudo" "tteayudo" "contenservicios" "formteayudo" "carroteayudo" "pie";
+}
+
+#cabecera__teayudo {
+  grid-area: cabeteayudo;
+}
+
+#titulo__teayudo {
+  grid-area: tteayudo;
+  text-align: center;
+}
+#titulo__teayudo h1 {
+  color: white;
+  font-size: large;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#contenedor__servicios {
+  grid-area: contenservicios;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+#contenedor__servicios .servicio {
+  background: linear-gradient(#B21368 0%, #F2C5E0 120%);
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  margin-top: 50px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+#carrousel__teayudo {
+  grid-area: carroteayudo;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#form__teayudo {
+  grid-area: formteayudo;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+#form__teayudo label {
+  color: white;
+  font-weight: bold;
+}
+
+/* TE AYUDO DESKTOP*/
+@media only screen and (min-width: 1280px) {
+  #contenedor__servicios {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    padding-top: 20px;
+  }
+  #contenedor__servicios .servicio {
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    padding-top: 30px;
+  }
+  #carrousel__teayudo {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #form__teayudo {
+    grid-area: formteayudo;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+}
+/* PAGINA DE CONTACTO*/
+#contenedor__contacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "cabecontacto" "tcontacto" "formcontacto" "infointeres" "pie";
+}
+
+#Cabecera__contacto {
+  grid-area: cabecontacto;
+}
+
+#titulo__contacto {
+  grid-column: tcontacto;
+  text-align: center;
+}
+#titulo__contacto h1 {
+  color: white;
+  font-size: large;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#form__contacto {
+  grid-area: formcontacto;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 70px;
+}
+#form__contacto label {
+  color: white;
+  font-weight: bold;
+}
+
+#Informacion__de__interes {
+  grid-area: infointeres;
+  text-align: center;
+  padding-top: 180px;
+}
+#Informacion__de__interes input {
+  background: linear-gradient(to right, #B21368, #F2C5E0);
+  width: 100px;
+}
+#Informacion__de__interes input:hover {
+  background: #EC9EC0;
+}
+#Informacion__de__interes textarea {
+  text-align: center;
+  border-radius: 8px;
+  color: lightgray;
+}
+
+/* CONTACTO DESKTOP*/
+@media only screen and (min-width: 1280px) {
+  #form__contacto {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+  }
+}/*# sourceMappingURL=main.css.map */
